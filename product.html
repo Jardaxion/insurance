@@ -43,7 +43,7 @@
               </svg></a>
           </div>
         </div>
-        <div class="header__mobileMenu js-open-desktop-menu"><span></span><span></span><span></span>
+        <div class="header__mobileMenu-btn js-open-mobile-menu"><span></span><span></span><span></span>
         </div>
       </div>
       <div class="header__menu">
@@ -139,6 +139,16 @@
           </div>
         </div>
       </div>
+      <div class="header__mobileMenu-wrapper">
+        <div class="header__mobileMenu"> 
+          <ul class="header__mobileMenu-list">
+            <li class="header__mobileMenu-item js-reopen-desktop-menu"><a class="header__mobileMenu-link" href="#">Услуги</a></li>
+            <li class="header__mobileMenu-item"><a class="header__mobileMenu-link" href="#reviews">Отзывы</a></li>
+            <li class="header__mobileMenu-item"><a class="header__mobileMenu-link" href="#about">О нас</a></li>
+            <li class="header__mobileMenu-item"><a class="header__mobileMenu-link" href="#contacs">Контакты</a></li>
+          </ul><a class="button header__mobileMenu-button js-open-modal" href="" data-modal="request">Консультация   </a>
+        </div>
+      </div>
     </div>
   </header>
   <main class="main">
@@ -163,12 +173,21 @@
         <div class="document__inner">
           <p class="globalTitle document__title">Документы для оформления страховки</p>
           <div class="document__content">
-            <div class="document__imgs"> <img class="document__img" src="img/product/pass.png" alt=""><img class="document__img" src="img/product/vod.png" alt=""><img class="document__img" src="img/product/pts.png" alt="">
+            <div class="document__imgs"> 
+              <div class="document__img-wrapper"><img class="document__img" src="img/product/pass.png" alt=""></div>
+              <div class="document__img-wrapper"><img class="document__img" src="img/product/vod.png" alt=""></div>
+              <div class="document__img-wrapper"><img class="document__img" src="img/product/pts.png" alt=""></div>
             </div>
             <div class="document__texts">
-              <p class="document__text">Паспорт собственника ТС</p>
-              <p class="document__text">Водительские удостверения всех водителя</p>
-              <p class="document__text">Паспорт собственника ТС</p>
+              <div class="document__text-wrapper">
+                <p class="document__text">Паспорт собственника ТС</p>
+              </div>
+              <div class="document__text-wrapper">
+                <p class="document__text">Водительские удостверения всех водителя</p>
+              </div>
+              <div class="document__text-wrapper">
+                <p class="document__text">Паспорт собственника ТС</p>
+              </div>
             </div>
             <div class="document__mobileColumns">
               <div class="document__mobileColumn"><img class="document__mobileImg" src="img/product/pass.png" alt="">
@@ -277,6 +296,7 @@
     </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>

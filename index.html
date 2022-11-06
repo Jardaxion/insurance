@@ -43,7 +43,7 @@
               </svg></a>
           </div>
         </div>
-        <div class="header__mobileMenu js-open-desktop-menu"><span></span><span></span><span></span>
+        <div class="header__mobileMenu-btn js-open-mobile-menu"><span></span><span></span><span></span>
         </div>
       </div>
       <div class="header__menu">
@@ -137,6 +137,16 @@
                 <p class="service__description">Страхование ипотечного кредита по 2 документам!</p></a>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="header__mobileMenu-wrapper">
+        <div class="header__mobileMenu"> 
+          <ul class="header__mobileMenu-list">
+            <li class="header__mobileMenu-item js-reopen-desktop-menu"><a class="header__mobileMenu-link" href="#">Услуги</a></li>
+            <li class="header__mobileMenu-item"><a class="header__mobileMenu-link" href="#reviews">Отзывы</a></li>
+            <li class="header__mobileMenu-item"><a class="header__mobileMenu-link" href="#about">О нас</a></li>
+            <li class="header__mobileMenu-item"><a class="header__mobileMenu-link" href="#contacs">Контакты</a></li>
+          </ul><a class="button header__mobileMenu-button js-open-modal" href="" data-modal="request">Консультация   </a>
         </div>
       </div>
     </div>
@@ -296,7 +306,7 @@
       </div>
     </section>
     <section class="partners">
-      <div class="partners__inner"><img class="partners__parner" src="img/partners/1.png" alt="Партнер"><img class="partners__parner" src="img/partners/2.png" alt="Партнер"><img class="partners__parner" src="img/partners/3.png" alt="Партнер"><img class="partners__parner" src="img/partners/4.png" alt="Партнер"><img class="partners__parner" src="img/partners/5.png" alt="Партнер"><img class="partners__parner" src="img/partners/6.png" alt="Партнер"><img class="partners__parner" src="img/partners/7.png" alt="Партнер"><img class="partners__parner" src="img/partners/8.png" alt="Партнер"><img class="partners__parner" src="img/partners/1.png" alt="Партнер"><img class="partners__parner" src="img/partners/2.png" alt="Партнер"><img class="partners__parner" src="img/partners/3.png" alt="Партнер"><img class="partners__parner" src="img/partners/4.png" alt="Партнер"><img class="partners__parner" src="img/partners/5.png" alt="Партнер"><img class="partners__parner" src="img/partners/6.png" alt="Партнер"><img class="partners__parner" src="img/partners/7.png" alt="Партнер"><img class="partners__parner" src="img/partners/8.png" alt="Партнер">
+      <div class="partners__inner"><img class="partners__parner" src="img/partners/1.png" alt="Партнер"><img class="partners__parner" src="img/partners/2.png" alt="Партнер"><img class="partners__parner" src="img/partners/3.png" alt="Партнер"><img class="partners__parner" src="img/partners/4.png" alt="Партнер"><img class="partners__parner" src="img/partners/5.png" alt="Партнер"><img class="partners__parner" src="img/partners/6.png" alt="Партнер"><img class="partners__parner" src="img/partners/7.png" alt="Партнер"><img class="partners__parner" src="img/partners/8.png" alt="Партнер">
       </div>
     </section>
     <section class="banners">
@@ -309,31 +319,35 @@
             </div>
             <div class="banner__right"><img class="banner__outImg" src="img/banners/icon_car.png" alt=""></div>
           </div>
-          <div class="banner__big banner">
-            <div class="banner__top big">
-              <p class="banner__title big">Единый страховой центр</p>
-              <p class="banner__description">Позвоните и сообщите о происшествии в страховую компанию. Оператор контактного центра страховой компании подробно расскажет, что делать дальше</p>
+          <div class="banners__bottom">
+            <div class="banner__big banner">
+              <div class="banner__top big">
+                <p class="banner__title big">Единый страховой центр</p>
+                <p class="banner__description min">Позвоните и сообщите о происшествии в страховую компанию. Оператор контактного центра страховой компании подробно расскажет, что делать дальше</p>
+              </div>
+              <div class="banner__bottom big"><img class="banner__background" src="img/banners/img.png" alt=""><img class="banner__logo" src="img/logo.png" alt="">
+                <div class="banner__topEffect"></div>
+              </div>
             </div>
-            <div class="banner__bottom big"><img class="banner__background" src="img/banners/img.png" alt=""><img class="banner__logo" src="img/logo.png" alt="">
-              <div class="banner__topEffect"></div>
-            </div>
-          </div>
-          <div class="banner__mini banner firstBanner">
-            <div class="banner__top flex">
-              <p class="banner__title">Баннер &quot;Выгода&quot;</p>
-              <div class="banner__img-wrapper"> <img class="banner__img" src="img/banners/money_icon.png" alt=""></div>
-            </div>
-            <div class="banner__bottom">
-              <p class="banner__description">Позвоните и сообщите о происшествии в страховую компанию. Оператор контактного центра страховой компании подробно расскажет, что делать дальше</p>
-            </div>
-          </div>
-          <div class="banner__mini banner secondBanner">
-            <div class="banner__top flex">
-              <p class="banner__title">Баннер “Сервис”</p>
-              <div class="banner__img-wrapper"> <img class="banner__img" src="img/banners/delivery_icon.png" alt=""></div>
-            </div>
-            <div class="banner__bottom">
-              <p class="banner__description">Позвоните и сообщите о происшествии в страховую компанию. Оператор контактного центра страховой компании подробно расскажет, что делать дальше Позвоните и сообщите о происшествии в страховую компанию. Оператор контактного центра страховой компании подробно расскажет, что делать дальше</p>
+            <div class="banners__right">
+              <div class="banner__mini banner firstBanner">
+                <div class="banner__top flex">
+                  <p class="banner__title">Баннер &quot;Выгода&quot;</p>
+                  <div class="banner__img-wrapper"> <img class="banner__img" src="img/banners/money_icon.png" alt=""></div>
+                </div>
+                <div class="banner__bottom">
+                  <p class="banner__description">Позвоните и сообщите о происшествии в страховую компанию. Оператор контактного центра страховой компании подробно расскажет, что делать дальше</p>
+                </div>
+              </div>
+              <div class="banner__mini banner secondBanner">
+                <div class="banner__top flex">
+                  <p class="banner__title">Баннер “Сервис”</p>
+                  <div class="banner__img-wrapper"> <img class="banner__img" src="img/banners/delivery_icon.png" alt=""></div>
+                </div>
+                <div class="banner__bottom">
+                  <p class="banner__description">Позвоните и сообщите о происшествии в страховую компанию. Оператор контактного центра страховой компании подробно расскажет, что делать дальше Позвоните и сообщите о происшествии в страховую компанию. Оператор контактного центра страховой компании подробно расскажет, что делать дальше</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -350,7 +364,7 @@
                   <path d="M0.292893 7.29289C-0.0976315 7.68342 -0.0976315 8.31658 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41421 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928932C7.68054 0.538408 7.04738 0.538408 6.65685 0.928932L0.292893 7.29289ZM14 7L1 7V9L14 9V7Z" fill="#414141"></path>
                 </svg>
               </div>
-              <div class="questions__buttons"><a class="questions__button js-select-button" href="#" data-select-question="1">Тинькофф страхование</a><a class="questions__button select js-select-button" href="#" data-select-question="2">Альфа страхование</a><a class="questions__button js-select-button" href="#" data-select-question="3">Росгорсрах</a><a class="questions__button js-select-button" href="#" data-select-question="4">Еще компания страхвка</a><a class="questions__button js-select-button" href="#" data-select-question="5">Сбер страхование</a>
+              <div class="questions__buttons"><a class="questions__button js-select-button" href="#" data-select-question="1">Тинькофф страхование</a><a class="questions__button select js-select-button" href="#" data-select-question="2">Альфа страхование</a><a class="questions__button js-select-button" href="#" data-select-question="3">Росгорсрах</a><a class="questions__button js-select-button" href="#" data-select-question="4">Сбер страхование</a>
               </div>
               <div class="questions__rightArrow questions__arrow">
                 <svg width="14" height="16" viewbox="0 0 14 16" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -475,35 +489,6 @@
                   </div>
                 </div>
               </div>
-              <div class="questions__wrapper" data-question="5">
-                <div class="questions__steps">
-                  <div class="question__step">
-                    <p class="question__step-title">Соблюдайте сопкойствие</p>
-                    <p class="question__step-description">Запросите у второго участника ДТП страховой полис ОСАГО и проверьте его в базе РСА, он потребуется для заполнения извещения о ДТП и гарантий компенсации ущерба от виновника</p>
-                    <div class="question__subdescription">
-                      <div class="question__linkInc">
-                        <svg width="19" height="19" viewbox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M18.75 1C18.75 0.585786 18.4142 0.25 18 0.25L11.25 0.249999C10.8358 0.249999 10.5 0.585786 10.5 0.999999C10.5 1.41421 10.8358 1.75 11.25 1.75H17.25V7.75C17.25 8.16421 17.5858 8.5 18 8.5C18.4142 8.5 18.75 8.16421 18.75 7.75L18.75 1ZM8.53033 11.5303L18.5303 1.53033L17.4697 0.469669L7.46967 10.4697L8.53033 11.5303Z" fill="#00B7C3"></path>
-                          <path d="M15 11V16C15 17.1046 14.1046 18 13 18H3C1.89543 18 1 17.1046 1 16V6C1 4.89543 1.89543 4 3 4H8" stroke="#00B7C3" stroke-width="1.5"></path>
-                        </svg>
-                      </div>
-                      <p class="question__subdescription-text"><a href="#">Проверьте полис</a> - введите номер полиса и проверьте его статус в базе РСА</p>
-                    </div>
-                    <p class="question__number">1</p>
-                  </div>
-                  <div class="question__step">
-                    <p class="question__step-title">Сообщите о происшествии</p>
-                    <p class="question__step-description">Позвоните и сообщите о происшествии в страховую компанию. Оператор контактного центра страховой компании подробно расскажет, что делать дальше</p>
-                    <div class="question__subdescription"><a href="tel=+78008008080">8 800 800-80-80 </a></div>
-                    <p class="question__number">2</p>
-                  </div>
-                  <div class="question__step">
-                    <p class="question__step-title">Соберите документы</p>
-                    <p class="question__step-description">Позвоните и сообщите о происшествии в страховую компанию. Оператор контактного центра страховой компании подробно расскажет, что делать дальше</p>
-                    <p class="question__number">3</p>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -532,13 +517,6 @@
               </div>
             </div>
             <div class="ourTeam__people"><img class="ourTeam__people-img" src="img/ourTeam/3.png" alt="">
-              <div class="ourTeam__people-effect"></div>
-              <div class="ourTeam__people-text">
-                <p class="ourTeam__people-name">Александр Первых</p>
-                <p class="ourTeam__people-description">Позвоните и сообщите о происшествии в страховую компанию. Оператор контактного центра страховой компании подробно расскажет, что делать дальше</p>
-              </div>
-            </div>
-            <div class="ourTeam__people"><img class="ourTeam__people-img" src="img/ourTeam/4.png" alt="">
               <div class="ourTeam__people-effect"></div>
               <div class="ourTeam__people-text">
                 <p class="ourTeam__people-name">Александр Первых</p>
@@ -800,6 +778,7 @@
     </div>
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/jquery.marquee@1.6.0/jquery.marquee.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
